@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Crescentino Marco</title>
+  <style>
+    .Background {
+      background: rgb(238, 238, 238);
+      height: 1600px;
+      display: flex;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .Portfolio {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      height: 1500px;
+      left: 10%;
+      right: 10%;
+      color: #737373;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .presentazione {
+      position: absolute;
+      left: 12.5%;
+      right: 12.5%;
+      top: 17%;
+    }
+
+    .me {
+      position: absolute;
+      left: 30%;
+    }
+
+    /* Stile box progetti */
+    .project-box {
+      position: absolute;
+      margin: 6px 500px;
+      border: 1px solid #000000;
+      padding: 0 6px;
+      box-sizing: border-box;
+      width: 400px;
+      background: #fff;
+    }
+
+    /* Posizioni specifiche */
+    .NeedendP {
+      top: 36%;
+      right: 22%;
+    }
+
+    .CalcolatriceP {
+      top: 70%;
+      right: 18%; /* più a destra */
+    }
+
+    .PacP {
+      top: 105%;
+      right: 18%; /* più a destra */
+    }
+
+    .Nbutton {
+      border-radius: 15px;
+      background-color: #542ca3;
+      color: azure;
+      border: none;
+      font-size: 15px;
+      padding: 6px 12px;
+      cursor: pointer;
+      position: relative;
+      top: 10px;
+      text-decoration: none;
+      font-family: inherit;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .Nbutton:hover {
+      background-color: #3f2473;
+      box-shadow: 0 0 10px rgba(84, 44, 163, 0.6);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="Portfolio">
+      <img src="marco crescentino.jpg" alt="" height="175" width="175" style=" position: absolute; right: 75%; top: 2.5%;">
+      <img src="loghi.png" alt="" height="80" width="282" style=" position: absolute;right: 50%; top: 10%;">
+      
+      <div class="me">
+        <h1 style="color: #542ca3;">Marco Crescentino</h1>
+        <h3 style="color: #542ca3;"><span id="tw" class="typewriter"></span></h3>
+      </div>
+
+      <div class="Contatti">
+        <h3 style="color: #542ca3;">Contatti:</h3>
+        <h3>email: Marcocrescentino35@gmail.com</h3>
+        <h3>cellulare: 351 9005935</h3>
+        <h3 style="color: #542ca3;">
+          <a href="https://github.com/Smash2121212121">github: Smash2121212121</a>
+        </h3>
+      </div>
+
+      <div class="Competenze">
+        <h3 style="color: #542ca3;">Competenze:</h3>
+        <p>
+          hard skill: html, css, javascript, react, excel, web hosting, responsive design, CMS WordPress, SEO/Google analytics, marketing, project management, copywriting, finanza personale, matematica, contabilità base, data entry, macroeconomia e microeconomia, collaborazione con strumenti di intelligenza artificiale per svilluppo e ottimizzazione.
+        </p>
+        <p>
+          soft skill: problem solving, team work, curiosità, creatività, autonomia nell'apprendimento e nel lavoro, capacita di ragionamento logico, disciplina, determinazione, organizzazione, comunicazione rispettosa, adattabilità, gestione del tempo, capacita di lavorare con strumenti digitali, flessibilità.
+        </p>
+      </div>
+
+      <div class="presentazione">
+        <h3 style="color: #542ca3;">Chi sono:</h3>
+        <p>
+          Sono uno studente di Economia all’Università di Ferrara con una grande passione per il mondo digitale e lo sviluppo web. Nel tempo libero mi dedico a progetti in HTML, CSS e JavaScript: trasformo le idee in pagine web funzionali e curate, con nuove tecniche ogni giorno, considerando i bug un’occasione per imparare. Sto costruendo il mio percorso come junior developer, con l’obiettivo di crescere sia sul lato tecnico (front-end, responsive design, JavaScript moderno) sia su quello analitico, collegando lo sviluppo software con le competenze che sto maturando in ambito economico.
+        </p>
+      </div>
+
+      <h3 style="color: #542ca3; position: absolute; left:12.5%; top: 31%;">Progetti:</h3>
+
+      <!-- BOX NEEDEND -->
+      <div class="project-box NeedendP">
+        <a target="_blank" href="Needend png.png">
+          <img src="Needend png.png" alt="" height="197" width="380">
+        </a>
+        <div>
+          Needend è stato il mio primo progetto da autodidatta con Html,CSS e JavaScript; lo scopo di needend è permettere alle persone di offrire piccoli servizi o commissioni in cambio di un compenso e, allo stesso tempo, trovare qualcuno disposto ad aiutare in attività che non rientrano in mestieri tradizionali.
+        </div>
+        <a href="https://needend.netlify.app/" target="_blank" class="Nbutton">Needend</a>
+      </div>
+
+      <!-- BOX CALCOLATRICE -->
+      <div class="project-box CalcolatriceP">
+        <a target="_blank" href="calcolatrice.png">
+          <img src="calcolatrice.png" alt="calcolatrice" height="197" width="130">
+        </a>
+        <div>
+          La calcolatrice è un progetto realizzato con HTML, CSS e JavaScript per eseguire semplici operazioni matematiche direttamente da browser. È stata un’ottima occasione per lavorare con gli eventi e la gestione del DOM.
+        </div>
+        <a href="calcolatrice.html" target="_blank" class="Nbutton">Calcolatrice</a>
+      </div>
+
+      <!-- BOX PAC -->
+      <div class="project-box PacP">
+        <a target="_blank" href="Pac.png">
+          <img src="Pac.png" alt="PAC finanziario" height="197" width="210">
+        </a>
+        <div>
+          PAC è un progetto dedicato ai piani di accumulo di capitale, sviluppato con HTML, CSS e JavaScript. L’obiettivo era simulare investimenti periodici e calcolare il rendimento, unendo così programmazione e competenze economiche.
+        </div>
+        <a href="Pac.html" target="_blank" class="Nbutton">PAC</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // JS: effetto digitazione/cancellazione ciclico
+    const el = document.getElementById("tw");
+    const words = ["Sviluppatore Web", "Studente di Economia UniFe", "data entry"];
+    const typeSpeed = 70;
+    const deleteSpeed = 45;
+    const stayDelay = 1100;
+    const gapDelay = 400;
+    let i = 0;
+
+    function sleep(ms) {
+      return new Promise(r => setTimeout(r, ms));
+    }
+
+    async function typeWord(word) {
+      for (let ch = 1; ch <= word.length; ch++) {
+        el.textContent = word.slice(0, ch);
+        await sleep(typeSpeed);
+      }
+      await sleep(stayDelay);
+      for (let ch = word.length; ch >= 0; ch--) {
+        el.textContent = word.slice(0, ch);
+        await sleep(deleteSpeed);
+      }
+      await sleep(gapDelay);
+    }
+
+    async function loop() {
+      while (true) {
+        const word = words[i % words.length];
+        await typeWord(word);
+        i++;
+      }
+    }
+
+    loop();
+  </script>
+</body>
+</html>

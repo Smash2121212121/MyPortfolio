@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatriice</title>
+  <style>body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    color: #333;
+}
+
+p {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #333;
+}
+
+button {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 20px 26px;
+    margin: 8px;
+    font-size: 22px;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+}
+
+button:active {
+    background-color: #dcdcdc;
+    transform: scale(0.98);
+}
+
+.line1, .line2, .line3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.myResult {
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    padding: 22px 32px;
+    margin-top: 20px;
+    font-size: 24px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+    border: none;
+}
+</style>
+</head>
+<body>
+     <p id="numb"> <p id="result"></p>
+    <div class="line1"> 
+    <button class="mynumb" value="1">1</button>
+    <button class="mynumb" value="2">2</button>
+    <button class="mynumb" value="3">3</button>
+    <button class="mynumb" value="*">*</button>
+    </div>
+    <div class="line2"> 
+    <button class="mynumb" value="4">4</button>
+    <button class="mynumb" value="5">5</button>
+    <button class="mynumb" value="6">6</button>
+    <button class="mynumb" value="/">/</button>
+    </div>
+     <div class="line3"> 
+    <button class="mynumb" value="7">7</button>
+    <button class="mynumb" value="8">8</button>
+    <button class="mynumb" value="9">9</button>
+     <button class="mynumb" value="-">-</button>
+    </div>
+      <div class="line4">
+     <button id="clear">C</button>
+     <button class="myresult">Result</button>
+     <button class="mynumb" value="+">+</button>
+     </div> 
+</body>
+<script>let expression ="";
+const mynumber = document.querySelectorAll('.mynumb');
+Array.from(mynumber).forEach(function(mynumb){
+    mynumb.addEventListener('click' ,function() {
+        expression += this.value;
+     document.getElementById("numb").innerHTML=expression;
+    })
+});
+const myresult = document.querySelector(".myresult");
+myresult.addEventListener('click', ()=>{
+ try{
+    let text=expression;
+     let results= eval(text);
+    document.getElementById("result").textContent= results;
+ } catch (err) {
+    console.log(err.message)
+ }
+});
+document.getElementById("clear").addEventListener('click', () => {
+  expression = "";
+  document.getElementById("numb").textContent = "";
+  document.getElementById("result").textContent = "";
+});
+</script>
+</html>
